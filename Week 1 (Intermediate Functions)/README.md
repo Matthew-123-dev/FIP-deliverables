@@ -66,7 +66,3 @@ Notes and edge cases
 - The average calculation divides by (number of scores + weight). If that divisor is 0 the code returns an average of 0.
 - Invalid numeric inputs when entering scores produce an "Invalid number." message and allow retrying; invalid config inputs fall back to defaults.
 
-License
-- This is a small exercise script — add a license file if you plan to distribute it.
-
-If you want, I can also add a tiny example script that calls `student_score_calc` non-interactively for automated testing.
