@@ -1,0 +1,36 @@
+2026-02-08 11:22:10,229 DEBUG: Calculated subtotal: ₦660000.00
+2026-02-08 11:22:10,230 INFO: Cart subtotal: ₦660,000.00
+2026-02-08 11:22:10,230 DEBUG: Line: Wireless Noise-Cancelling Headphones x1 @ ₦250,000.00 => ₦250,000.00
+2026-02-08 11:22:10,230 DEBUG: Line: Portable Charger x2 @ ₦80,000.00 => ₦160,000.00
+2026-02-08 11:22:10,230 DEBUG: Line: Yoga Mat 6mm x1 @ ₦250,000.00 => ₦250,000.00
+2026-02-08 11:22:10,231 DEBUG: (BUG) Applying percentage discount: code=TENPERCENT raw_fraction=0.1 computed_amount_naira=₦6600000.00
+2026-02-08 11:22:10,231 INFO: Discount applied: ₦6600000.00, new total: ₦0.00
+2026-02-08 11:22:10,231 INFO: Final total: ₦0.00 (discount: ₦6,600,000.00)
+2026-02-08 11:22:10,266 DEBUG: Calculated subtotal: ₦660000.00
+2026-02-08 11:22:10,268 INFO: Cart subtotal: ₦660,000.00
+2026-02-08 11:22:10,269 DEBUG: Line: Wireless Noise-Cancelling Headphones x1 @ ₦250,000.00 => ₦250,000.00
+2026-02-08 11:22:10,270 DEBUG: Line: Portable Charger x2 @ ₦80,000.00 => ₦160,000.00
+2026-02-08 11:22:10,271 DEBUG: Line: Yoga Mat 6mm x1 @ ₦250,000.00 => ₦250,000.00
+2026-02-08 11:22:10,272 DEBUG: (BUG) Applying percentage discount: code=TENPERCENT raw_fraction=0.1 computed_amount_naira=₦6600000.00
+2026-02-08 11:22:10,273 INFO: Discount applied: ₦6600000.00, new total: ₦0.00
+2026-02-08 11:22:10,274 INFO: Final total: ₦0.00 (discount: ₦6,600,000.00)
+2026-02-08 11:22:10,276 INFO: Automated pdb session transcript:
+> /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(113)checkout_demo()
+-> 'Wireless Noise-Cancelling Headphones': 1,
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(114)checkout_demo()
+-> 'Portable Charger': 2,
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(115)checkout_demo()
+-> 'Yoga Mat 6mm': 1,
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(112)checkout_demo()
+-> cart = {
+(Pdb) *** NameError: name 'subtotal' is not defined
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(118)checkout_demo()
+-> result = checkout(cart, discount_code='TENPERCENT')
+(Pdb) *** NameError: name 'total_naira' is not defined
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(119)checkout_demo()
+-> print('\nSummary:')
+(Pdb) *** NameError: name 'val' is not defined
+(Pdb) > /home/matthew_123_dev/Documents/Career/FIP_IT/deliverables/Week 3/app.py(120)checkout_demo()
+-> print('Subtotal:', format_naira(result['subtotal_naira']))
+(Pdb) *** NameError: name 'discount_amount' is not defined
+(Pdb) 
