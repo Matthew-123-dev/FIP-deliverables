@@ -1,0 +1,38 @@
+Cleaning report
+================
+Line 2: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Adebayo Oluwaseun', 'score': '88', 'department': 'Computer Science'}
+Line 3: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Chinedu Okeke', 'score': '92', 'department': 'Engineering'}
+Line 4: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ngozi Eze', 'score': '85', 'department': 'Medicine'}
+Line 5: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Fatima Suleiman', 'score': '78', 'department': 'Biology'}
+Line 6: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ifeanyi Nwankwo', 'score': '', 'department': 'Chemistry'}
+Line 7: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Amaka Okoro', 'score': '101', 'department': 'Physics'}
+Line 8: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Emeka Obi', 'score': '67', 'department': 'Mathematics'}
+Line 9: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Tunde Balogun', 'score': '89', 'department': 'Computer Science'}
+Line 10: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Kemi Afolabi', 'score': '73', 'department': ''}
+Line 11: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Uchechukwu Nnamani', 'score': 'abc', 'department': 'Engineering'}
+Line 12: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Chisom Eze', 'score': '49', 'department': 'Medicine'}
+Line 13: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Binta Musa', 'score': '54', 'department': 'Public Health'}
+Line 14: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ikenna Nnadi', 'score': '95', 'department': 'Engineering'}
+Line 15: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Hadiza Ahmed', 'score': '60', 'department': 'Philosophy'}
+Line 16: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Oluwatobi Akinola', 'score': '88.5', 'department': 'Computer Science'}
+Line 17: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Sulaimon Adegoke', 'score': '-5', 'department': 'Mathematics'}
+Line 18: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ngozi Nwogu', 'score': '90', 'department': 'Medicine'}
+Line 19: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Chukwuemeka Okafor', 'score': 'NaN', 'department': 'Engineering'}
+Line 20: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Zainab Ibrahim', 'score': '77', 'department': 'Law'}
+Line 21: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Oluwaseyi Ade', 'score': '82', 'department': 'Economics'}
+Line 22: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ibrahim Abubakar', 'score': '100', 'department': 'Engineering'}
+Line 23: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ogechi Mbakwe', 'score': '', 'department': 'Undeclared'}
+Line 24: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Aisha Bello', 'score': 'eighty', 'department': 'Public Health'}
+Line 25: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Tosin Fashola', 'score': '69', 'department': 'Computer Science'}
+Line 26: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Khadija Yusuf', 'score': '58', 'department': 'Sociology'}
+Line 27: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Segun Adetunji', 'score': '74', 'department': 'Mathematics'}
+Line 28: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Oluoma Nworie', 'score': '88', 'department': 'Medicine'}
+Line 29: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Nkechi Anozie', 'score': '92', 'department': 'Computer Science'}
+Line 30: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Mallam Sule', 'score': '45', 'department': 'History'}
+Line 31: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Chika Onyekachi', 'score': '1010', 'department': 'Engineering'}
+Line 32: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Maryam Garba', 'score': '66', 'department': 'Biology'}
+Line 33: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Ifeoma Okeke', 'score': '87', 'department': 'Computer Science'}
+Line 34: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Rasheedat Olorunfemi', 'score': '', 'department': 'Law'}
+Line 35: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Samuel Adeyemi', 'score': '71', 'department': 'Economics'}
+Line 36: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Blessing Obi', 'score': '79', 'department': 'Public Health'}
+Line 37: ['missing name', 'missing department', 'invalid score: None'] -> {'name': 'Jide Ogundele', 'score': '94', 'department': 'Engineering'}
