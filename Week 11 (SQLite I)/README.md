@@ -1,52 +1,64 @@
-# Week 11 — SQLite I
+## Week 11 — SQLite I
 
-Small helper for creating and inspecting a local SQLite database used for Week 11 exercises.
+This file documents the SQLite database helper implemented in `app.py`.
 
-Files
-- `app.py` — CLI helper that creates a `week11.db` SQLite file and provides the following flags: `--init`, `--reset`, `--show`, `--seed`.
-- `week11.db` — database file created by the script (after running `--init`).
+Overview
+--------
+A small helper for creating and inspecting a local SQLite database used for
+Week 11 exercises. The script manages table creation, seeding example data,
+and provides inspection tools for the `week11.db` database file.
 
-Prerequisites
-- Python 3.8+
-- Optional: `sqlite3` CLI for quick inspection
+Why this design
+----------------
+- Centralizes database initialization and reset logic in a single CLI tool.
+- Enforces foreign key constraints and consistent schema across setups.
+- Provides quick inspection without requiring manual SQL queries.
+- Seeds realistic example data for testing queries.
 
-Quick commands
+Quick contract
+--------------
+- Files: `app.py` (CLI helper), `week11.db` (created database).
+- CLI flags: `--init` (create tables), `--reset` (drop and recreate),
+    `--show` (display schema), `--seed` (insert example data).
+- Tables: `users`, `posts`, `comments` with foreign keys and constraints.
+- Seeded data: users `alice` and `bob`; one post by alice; one comment by bob.
 
-- Initialize database (create tables):
+Usage
+-----
+1. Initialize the database:
 
 ```bash
 python3 app.py --init
 ```
 
-- Initialize and insert example data:
+2. Initialize and seed example data:
 
 ```bash
 python3 app.py --init --seed
 ```
 
-- Drop all tables and recreate (reset):
+3. Reset (drop all tables and recreate):
 
 ```bash
 python3 app.py --reset
 ```
 
-- Show current tables and schema:
+4. Inspect schema:
 
 ```bash
 python3 app.py --show
 ```
 
-Inspect with sqlite3 CLI
+5. Query with sqlite3 CLI:
 
 ```bash
 sqlite3 "Week 11 (SQLite I)/week11.db"
--- then inside sqlite3:
 .tables
 .schema users
 SELECT * FROM users;
 ```
 
-Example Python query
+6. Query from Python:
 
 ```python
 import sqlite3
@@ -54,23 +66,24 @@ conn = sqlite3.connect('Week 11 (SQLite I)/week11.db')
 conn.row_factory = sqlite3.Row
 cur = conn.execute('SELECT username,email FROM users')
 for r in cur:
-    print(r['username'], r['email'])
+        print(r['username'], r['email'])
 conn.close()
 ```
 
-Seeded example data
-- `users`: `alice`, `bob`
-- `posts`: one post by `alice`
-- `comments`: one comment by `bob` on alice's post
+Notes
+-----
+- Requires Python 3.8+.
+- Enforces `PRAGMA foreign_keys = ON` for referential integrity.
+- Uses `sqlite3.Row` for convenient attribute-style column access.
+- Optional: install `sqlite3` CLI for quick schema inspection.
 
-Design notes
-- Tables: `users`, `posts`, `comments` with foreign keys and basic constraints.
-- The script enforces foreign keys (`PRAGMA foreign_keys = ON`) and uses `sqlite3.Row` for convenience.
+Testing suggestions
+-------------------
+- Add a test script that queries seeded data and asserts expected rows.
+- Add README examples showing `SELECT` statements and output.
+- Wrap DB calls in a small DAO module if expanding the project.
 
 Reference
+---------
 - Python sqlite3 docs: https://docs.python.org/3/library/sqlite3.html
 
-Next steps (suggested)
-- Add a tiny test script that queries the seeded data and asserts expected rows.
-- Add a README example showing `SELECT` statements and output.
-- Wrap DB calls in a small DAO module if expanding the project.
