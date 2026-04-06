@@ -1,0 +1,20 @@
+# Ignore environment files with secrets
+.env
+*.env
+
+# Python cache directories
+__pycache__/
+**/__pycache__/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor directories
+.vscode/
+.idea/
